@@ -1,0 +1,12 @@
+import React from "react";
+import { HomeCategory } from "../../../../types/HomeCategorytypes";
+
+const ElectricCategoryCard = ({item}:{item:HomeCategory}) => {
+    return (
+        <div>
+            <img className="object-contain h-10" src={item.image} alt=""/>
+            <h2 className="font-semibold text-sm">{item.name}</h2>
+        </div>
+    )
+}
+export default ElectricCategoryCard;
